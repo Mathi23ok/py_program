@@ -1,0 +1,15 @@
+f = 0 #first 
+s = 1 #second 
+n = int(input("Enter a number :"))
+if n==1:
+    print(f) #if the number is one then the output is 0
+else:
+    print(f,end =" ") #print the first number
+    print(s,end=" ") #print the second number
+    for i in range(1,n+1):
+        c = f+s #adding the first and second number we will get the third number
+
+        print(c,end=" ") #print the next number
+        f=s #swap the first with the second num
+        s =c #swap the third with second
+        
