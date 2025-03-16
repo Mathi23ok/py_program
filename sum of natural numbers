@@ -1,5 +1,13 @@
+#by using for loop
+
 n = int(input("Enter a number upto which you need to add:"))
 s = 0 #sum
 for i in range(1,n+1):
     s +=i
 print(s)    
+
+#by using formula 
+
+n = int(input("Enter a number upto which you need to add:"))
+s = n*(n+1)/2
+print(int(s))
