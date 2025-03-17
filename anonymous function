@@ -1,0 +1,15 @@
+n = int(input("Enter the number of terms:"))
+
+'''lambda function is used to create an anonymous function'''
+'''map function is used to apply a function to all the items in an input_list'''
+'''range function is used to generate a sequence of numbers'''
+'''list function is used to convert the output of map function to a list'''
+'''The output of the map function is a map object, so it is converted to a list'''
+
+result = list(map(lambda x: 2 ** x, range(n)))
+
+'''for loop is used to print the output'''
+'''The output is printed in the form of 2 raised to the power i is result[i]'''
+
+for i in range(n):
+    print("2 raised to the power", i, "is", result[i])
