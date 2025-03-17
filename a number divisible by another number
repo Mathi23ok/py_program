@@ -1,0 +1,14 @@
+#for loop to find the number divisible by another number 
+
+for i in range(1, 101):
+    if i % 5 == 0:
+        print(i,end=" ")
+
+#using lambda func and filter to find the number divisible by another number
+
+print("\n")
+print(list(filter(lambda x: x % 5 == 0, range(1, 101))))
+
+#filter is used to filter the elements from the list based on the condition given in the lambda function
+#lambda function is used to define the function in one line
+#range is used to generate the numbers from 1 to 100
